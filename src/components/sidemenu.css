@@ -1,0 +1,15 @@
+.side-drawer {
+  width: 260px;
+  padding: 20px;
+}
+
+.side-drawer h3 {
+  text-align: center;
+  color: #663635;
+}
+
+.menu-icon {
+  font-size: 36px !important;
+  color: #fff !important;
+  cursor: pointer;
+}

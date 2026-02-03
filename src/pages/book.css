@@ -1,0 +1,99 @@
+/* Import modern Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full screen background */
+.book-page {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: linear-gradient(
+      rgba(18, 18, 18, 0.6),
+      rgba(18, 18, 18, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Booking card */
+.book-card,
+.booking-card {
+  background: #ffffff;
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Headings */
+.book-card h4,
+.booking-card h4 {
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+/* Booking details (confirmation page) */
+.booking-details p {
+  margin: 12px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Detail rows (if used) */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.detail-row .label {
+  font-weight: 600;
+  color: #555;
+}
+
+.detail-row .value {
+  font-weight: 500;
+  color: #111;
+}
+
+/* Buttons */
+.book-stay-btn,
+.back-home-btn {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-transform: none;
+}
+
+/* Hover effect */
+.book-stay-btn:hover,
+.back-home-btn:hover {
+  opacity: 0.95;
+}
+
+/* Responsive fix */
+@media (max-width: 600px) {
+  .book-card,
+  .booking-card {
+    padding: 22px;
+  }
+}

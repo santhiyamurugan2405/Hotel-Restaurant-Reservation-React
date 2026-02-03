@@ -1,0 +1,180 @@
+.dining-page {
+  min-height: 100vh;
+  padding: 60px;
+  background: linear-gradient(to bottom, #f9f1f0, #deb3ad);
+  text-align: center;
+}
+/* NAVBAR FLOATING INSIDE HERO */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 50px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f9f1f0;
+  z-index: 10;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;   /* space between icon and button */
+}
+/* SEARCH BAR */
+.navbar-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 350px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255,255,255,0.85);
+  color: #663635;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+.search-results {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  padding: 10px;
+  z-index: 20;
+}
+
+.search-results p {
+  padding: 8px;
+  cursor: pointer;
+  color: #663635;
+}
+
+.search-results p:hover {
+  background: #f9f1f0;
+}
+
+
+/* LEFT MENU ICON */
+.menu-icon {
+  font-size: 36px;
+  color: #663635;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  color: #deb3ad;
+  transform: scale(1.2);
+}
+
+/* RIGHT PROFILE ICON */
+.profile-icon {
+  font-size: 38px;
+  color: #663635;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-icon:hover {
+  color: #deb3ad;
+  transform: scale(1.2);
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  margin-left: 15px !important;
+  border: 2px solid #fff !important;
+  background-color: #deb3ad !important;
+  color: #663635 !important;
+  border-radius: 25px !important;
+  padding: 6px 20px !important;
+  text-transform: none !important;
+}
+
+.login-btn:hover {
+  background: #663635 !important;
+  color: #fff !important;
+}
+
+
+.dining-title {
+  font-size: 42px;
+  color: #663635;
+}
+
+.dining-subtitle {
+  font-size: 18px;
+  color: #663635;
+  margin-bottom: 50px;
+}
+
+
+
+.dining-card {
+  width: 100%;
+  height: 100%;
+  background: #f9f1f0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+}
+
+.dining-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.dining-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.dining-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dining-content h3 {
+  color: #663635;
+  font-size: 22px;
+}
+
+.dining-content p {
+  color: #663635;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.dining-btn {
+  background-color: #663635 !important;
+  color: #f9f1f0 !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+}
+
+.dining-btn:hover {
+  background-color: #deb3ad !important;
+  color: #663635 !important;
+}

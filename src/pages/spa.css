@@ -1,0 +1,82 @@
+/* Reset */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Main page */
+.spa-page {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* Full screen background */
+.spa-hero {
+  width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-end;   /* move content to right */
+  align-items: center;
+}
+
+/* Overlay */
+.spa-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 80px;
+}
+
+/* Right card column */
+.spa-cards {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Cards */
+.spa-card {
+  background: rgba(255,255,255,0.92);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.spa-card:hover {
+  transform: translateX(-12px);
+}
+
+.spa-card h3 {
+  color: #663635;
+  margin-bottom: 8px;
+}
+
+.spa-card p {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .spa-overlay {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .spa-cards {
+    width: 90%;
+  }
+}

@@ -1,0 +1,84 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #FFFCFC;
+}
+
+.reserve-page {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #BCABB0, #785964);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reserve-card {
+  background: #FFFCFC;
+  width: 420px;
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(8, 8, 8, 0.35);
+  text-align: center;
+  color: #080808;
+}
+
+.reserve-card h2 {
+  color: #5D3543;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+.subtitle {
+  color: #785964;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Inputs & Select */
+.reserve-card input,
+.reserve-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1.5px solid #BCABB0;
+  font-size: 14px;
+  outline: none;
+  background: #FFFCFC;
+  color: #080808;
+}
+
+.reserve-card input:focus,
+.reserve-card select:focus {
+  border-color: #5D3543;
+  box-shadow: 0 0 0 2px rgba(93, 53, 67, 0.2);
+}
+
+/* Date & Time row */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 20px;
+  background: #5D3543;
+  color: #FFFCFC;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #785964;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(8, 8, 8, 0.3);
+}
